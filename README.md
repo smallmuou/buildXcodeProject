@@ -29,6 +29,12 @@ From Apple Q&A : https://developer.apple.com/library/ios/qa/qa1763/_index.html
 *  Depending on your intended distribution method, follow the steps in Submitting Your App or Beta Testing your iOS App respectively.
 
 ###Way2:Static library or Framework
+*   Add static library target using xcode.
+*   Add source code to the target.
+*   Build static library target, and it will product .a
+*   Add .a to the app target, and remove the source code.
+*   Rebuild the app target, and will product the .app file.(Need -ObjC)
+*   Distribute app with xcode (build archive)
 
 ###Way3:Copy binary files to xcode project
 *   Using buildXcodeProject.sh to build project
