@@ -1,7 +1,7 @@
 buildXcodeProject
 =================
 
-build Xcode project for distribute without source code
+build xcode project for distribute without source code
 
 Usage
 -----------------
@@ -29,4 +29,10 @@ From Apple Q&A : https://developer.apple.com/library/ios/qa/qa1763/_index.html
 
 ###Way2:Static library or Framework
 
-###Way3:Copy binary files which is complied to xcode project
+###Way3:Copy binary files to xcode project
+*   Using buildXcodeProject.sh to build project
+*   Remove all files from xcode project like .h .m .xib .png(except Info.plist, .lproj)
+*   Add 'build' to xcode project
+*   Change the bundle id, code sign
+*   Rebuild project with xcode, and it will reproduct the .app with new distribute cer
+*   Distribute app with xcode (build archive)
