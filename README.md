@@ -19,7 +19,8 @@ How to distribute iOS APP to Apple store(without apple developer id)
 
 From Apple Q&A : https://developer.apple.com/library/ios/qa/qa1763/_index.html
 
-*  Join to developer team
+*  Add the build engineer to the development team with the role of Admin through the Member Center. For more information on defining team roles, see Managing Your Team. The Admin role is required to manage the team distribution certificate.
+*  If the distribution build will be submitted to the App Store, add the build engineer to the team users on iTunes Connect with the role of Technical User. This allows the build engineer to log into iTunes Connect with their own credentials while submitting the app. Skip this step if the build is being used for Ad Hoc beta testing. For more info about the Technical User role in iTunes Connect, see Managing Users in the iTunes Connect Developer Guide.
 *  Create a new distribution certificate according to Requesting Signing Identities. If the team distribution certificate already exists, it must be revoked and recreated by the build engineer according to Re-Creating Certificates and Updating Related Provisioning Profiles.
 *  Create a distribution profile using the steps in Creating Store Provisioning Profiles.
 *  Download and install the distribution provisioning profile by dragging it onto the Xcode or iTunes icons on the dock.
